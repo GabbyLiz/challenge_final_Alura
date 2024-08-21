@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ALURA</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+    <header></header>
+    
+    <main>
+        <section class="principal">
+            <section class="principal_logo">
+                <img class="logo" src="./img/Logo.png"></img>
+            </section>
+            
+            <section class="principal_izquierdo">
+                <div>
+                    <input type="text" id="textoUsuario" class="principal_izquierdo_entrada" placeholder="Ingrese el texto aqui"/>  
+                </div>   
+                <div class="principal_izquierdo_sub">
+                    <p class="principal_izquierdo_alerta"><span class="iconify" data-icon="zondicons:exclamation-solid"></span>  Solo letras minúsculas y sin acentos</p>
+                    <div class="principal_izquierdo_botones">
+                        <button id="cambiarContenido" onclick="encriptadorTexto()" class="botonEncriptar">Encriptar</button>
+                        <button id="cambiarContenido2" onclick="desencriptadorTexto()" class="botonDesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="principal_derecho">
+                <div class="principal_derecho_marco">
+                    <img class="principal_derecho_marco_imagen" src="./img/avatar.png"></img>
+                    <div class="principal_derecho_marco_texto">
+                        <div class="principal_derecho_marco_texto1">Ningún mensaje fue encontrado</div>
+                        <div class="principal_derecho_marco_texto2">Ingresa el texto que desees encriptar o desencriptar.</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>Autora: Gabriela Quinde<br><a href="mailto:gabyliz96@hotmail.es">gabyliz96@hotmail.es</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
